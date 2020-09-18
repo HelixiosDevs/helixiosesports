@@ -9,24 +9,13 @@ body{
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 2;
-}
-
-.welcomeBanner{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
+  z-index: 3;
 }
 
 .navBar{
   width: 100%;
   height: 3.75em;
   background-color: #232d3b;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
   border-bottom: solid #fe002a;
   border-width:  0.171875em;
 
@@ -55,7 +44,7 @@ a{
 
 .navLinks{
   display: inline-block;
-  padding-top: 1.1em;
+  padding-top: 0.75em;
   /* padding-left: 28.125em; */
 }
 
@@ -64,7 +53,7 @@ a{
 }
 
 #signupButton{
-  font-size: 0.825em; 
+  font-size: 0.825em;
   padding: 0.5em 1.5em;
   background-color: #fe002a;
   border-radius: 5px;
@@ -104,8 +93,9 @@ a{
   font-size: 4.375em;
   color: #ffffff;
   text-align: center;
-  padding-top: 4em;
+  padding-top: 0em;
   text-shadow: #000000 0px 3px 6px;
+  padding-bottom: 2.2em;
 }
 
 .gameTray{
@@ -139,7 +129,7 @@ a{
 .gameHeader{
   font-size: 1.8em;
   text-align: center;
-  margin-top: 10.75em;
+  margin-top: 2em;
 }
 
 .redDot{
@@ -244,30 +234,30 @@ h1{
 
  .blogBanners figcaption{
    color: #000000;
-   font-size: 1.375em;
+   font-size: 1.1em;
    padding-top: 0.6875em;
    text-align: center;
  }
 
  .blogLines{
-   border: solid 1.5px #fe002a;
+   border: solid 0.10em #fe002a;
    width: 40%;
    margin: 0 auto;
    margin-top: 1.5625em;
  }
 
  .getInTouch {
-  padding-top: 2.6875em;
+  padding-top: 4.6875em;
  }
 
  .gitText{
    /* padding-top: 2.6875em; */
-   font-size: 1.5em;
+   font-size: 1.2em;
    display: inline-block;
  }
 
  #gitButton{
-    font-size: 1.125em;
+    font-size: 1em;
     padding: 0.8em 3.6em;
     background-color: #fe002a;
     /* margin-left: 35em; */
@@ -282,12 +272,12 @@ h1{
 
  #squadSection{
    background-color: #1E1E1E;
-   padding: 4em 5em 9.5em;
+   padding: 4em 5em 6.5em;
    border-bottom: solid 0.171875em #fe002a;
  }
 
  .squadHeader{
-      padding-bottom: 5.2em;
+      padding-bottom: 2.5em;
       text-align:  center;
  }
 
@@ -300,11 +290,11 @@ h1{
  }
 
  .squadImages img {
-   scale: 0.8;
  }
 
  .squadImages figure{
    padding-right: 5em;
+   transform: scale(0.8);
  }
 
  .squadImages figure:last-child{
@@ -326,6 +316,7 @@ h1{
   height: 230px;
   position: relative;
   overflow: hidden;
+
 }
 
 .images{
@@ -333,7 +324,7 @@ h1{
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
+  height: 80%;
   width: 300%;
   animation: slideshow 35s linear infinite;
 }
@@ -344,11 +335,10 @@ h1{
 }
 
 #aboutFooter{
-  padding: 4.75em 9.75em 4.75em 12.75em;
+  padding: 2.75em 6.75em 5.75em 6.75em;
 }
 
 .footerLogo{
-    border-right: solid 1px #707070;
     /* padding-right: 9.9375em; */
     display: inline-block;
 }
@@ -405,7 +395,6 @@ h2{
 
 .location{
   display: inline-block;
-  border-left: solid 1px #707070;
   /* padding-left: 9.9375em; */
 }
 
@@ -439,16 +428,15 @@ h2{
 }
 
 .redendFooter img{
-  position: absolute;
-  top: 175.25em;
-  right: 18.5em;
+  display: inline-block;
+  transform: scale(0.75);
+  padding-left: 40em;
   opacity: 0.9;
   transition: top 0.2s;
   transition-timing-function: ease-out;
 }
 
 .redendFooter img:hover{
-  top: 174.60em;
   opacity: 1;
   transition: top 0.2s;
   transition-timing-function: ease-out;
@@ -461,7 +449,7 @@ h2{
 #home a {
   margin: auto;
 } */
-/* 
+/*
 #user {
   scale: 0.9;
 } */
