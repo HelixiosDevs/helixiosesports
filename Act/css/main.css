@@ -112,12 +112,12 @@ a{
   text-align: center;
   margin-top: 4em;
   margin-bottom: 6.6em;
-  padding: 0px 10em 0em 10em;
+  padding: 0px 10em 0em 7em;
 }
 
 .gameLogo{
-  padding-right: 4.625em;
-  padding-left: 4.625em;
+  /* padding-right: 4.625em; */
+  /* padding-left: 4.625em; */
   border-right: solid 1px #707070;
   height: 100%;
   opacity: 50%;
@@ -153,16 +153,34 @@ h1{
   font-size: 3.1875em;
 }
 
-.tournamentsStatus, .blogStatus{
+/* .tournamentsStatus, .blogStatus{
   display: inline;
   font-size: 1.4em;
   margin-top: 2em;
   margin-left: 38em;
+} */
+
+.tournamentsStatus{
+  /* display: inline; */
+  font-size: 1.4em;
+  /* margin-top: 2em;
+  margin-left: 38em; */
+}
+
+.spacer {
+  flex: 1 1 auto;
 }
 
 .blogStatus{
-  margin-left: 56em;
+  display: inline;
+  font-size: 1.4em;
+  /* margin-top: 2em;
+  margin-left: 38em; */
 }
+
+/* .blogStatus{
+  margin-left: 56em;
+} */
 
  .tournamentsHeader, .blogHeader{
    border-bottom: solid 1px #707070;
@@ -319,7 +337,7 @@ h1{
 
 .footerLogo{
     border-right: solid 1px #707070;
-    padding-right: 9.9375em;
+    /* padding-right: 9.9375em; */
     display: inline-block;
 }
 
@@ -343,7 +361,7 @@ h1{
 
 .gitHeader{
   display: inline-block;
-  padding: 0em 9.9375em;
+  /* padding: 0em 9.9375em; */
   vertical-align: top;
 }
 
@@ -376,7 +394,7 @@ h2{
 .location{
   display: inline-block;
   border-left: solid 1px #707070;
-  padding-left: 9.9375em;
+  /* padding-left: 9.9375em; */
 }
 
 .location h2{
@@ -390,8 +408,9 @@ h2{
 
 .location p{
   display: inline-block;
-  padding-left: 2.5em;
+  /* padding-left: 2.5em; */
 }
+
 .redendFooter{
   background: #fe002a;
   padding: 4em 12.75em;
