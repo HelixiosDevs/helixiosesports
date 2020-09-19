@@ -106,7 +106,7 @@ a{
 }
 
 .gameTray img {
-  transform: scale(0.8);
+  scale: 0.8;
 }
 
 .gameLogo{
@@ -458,15 +458,12 @@ h2{
   margin-left: 9em;
 }
 
-.noUnderline {
+/* .noUnderline {
   text-emphasis: none;
   text-decoration: none !important;
-}
+} */
 
   a:hover {
-    color: white;
-}
-
-.customcarousel{
-  padding: 0px;
+    color: red;
+    text-decoration: none !important;
 }
