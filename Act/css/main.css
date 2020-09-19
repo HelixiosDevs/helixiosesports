@@ -106,7 +106,7 @@ a{
 }
 
 .gameTray img {
-  scale: 0.8;
+  transform: scale(0.8);
 }
 
 .gameLogo{
@@ -414,7 +414,7 @@ h2{
 
 .redendFooter{
   background: #fe002a;
-  padding: 4em 12.75em;
+  padding: 3em 9.75em 2.5em;
 }
 
 .redendFooter h2{
@@ -424,13 +424,14 @@ h2{
 }
 
 .redendFooter p{
-  font-size: 0.825em;
+  display: inline;
+  font-size: 1em;
 }
 
 .redendFooter img{
   display: inline-block;
   transform: scale(0.75);
-  padding-left: 40em;
+  padding-left: 25em;
   opacity: 0.9;
   transition: top 0.2s;
   transition-timing-function: ease-out;
@@ -464,6 +465,14 @@ h2{
 } */
 
   a:hover {
-    color: red;
+    color: white;
     text-decoration: none !important;
+}
+
+.customcarousel{
+  padding: 0px;
+}
+
+.blogStatus a:hover{
+  color: red;
 }
