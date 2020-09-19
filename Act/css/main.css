@@ -106,7 +106,7 @@ a{
 }
 
 .gameTray img {
-  scale: 0.8;
+  transform: scale(0.8);
 }
 
 .gameLogo{
@@ -464,5 +464,9 @@ h2{
 }
 
   a:hover {
-    color: red;
+    color: white;
+}
+
+.customcarousel{
+  padding: 0px;
 }
