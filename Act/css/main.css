@@ -160,8 +160,9 @@ h1{
 .tournamentsStatus{
   /* display: inline; */
   font-size: 1.4em;
-  /* margin-top: 2em;
-  margin-left: 38em; */
+  margin-bottom: 0px;
+  /* margin-top: .7em; */
+  /* margin-left: 38em; */
 }
 
 .spacer {
@@ -379,10 +380,10 @@ h2{
   padding-left: 0.8125em;
 }
 
-.gitHeader div{
+/* .gitHeader div{
   font-size: 1.125em;
   padding-top: 1.125em;
-}
+} */
 
 .gitHeader div:last-child{
   padding-top: 0em;
