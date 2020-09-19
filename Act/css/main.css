@@ -53,8 +53,8 @@ a{
 }
 
 #signupButton{
-  font-size: 0.825em;
-  padding: 0.5em 1.5em;
+  font-size: 0.725em;
+  padding: 0.5em 1.2em;
   background-color: #fe002a;
   border-radius: 5px;
 }
@@ -90,12 +90,12 @@ a{
 
 .welcomeText{
   font-family: EsphimereBI;
-  font-size: 4.375em;
+  font-size: 390.375%;
   color: #ffffff;
   text-align: center;
   padding-top: 0em;
   text-shadow: #000000 0px 3px 6px;
-  padding-bottom: 2.2em;
+  padding-bottom: 15.0%;
 }
 
 .gameTray{
@@ -456,4 +456,13 @@ h2{
 
 #home {
   margin-left: 9em;
+}
+
+.noUnderline {
+  text-emphasis: none;
+  text-decoration: none !important;
+}
+
+  a:hover {
+    color: red;
 }
