@@ -74,6 +74,9 @@ a{
   background-color: #ec0027;
 }
 
+.signupButton-mobile{
+  background-color: #fe002a;
+}
 
 .userIcon{
   position: absolute;
@@ -495,6 +498,14 @@ h2{
 }
 
 @media screen and (max-width: 600px) {
+
+  .navbar{
+    border-bottom: solid 0.1em #fe002a;
+  }
+
+  .navbar-toggler{
+    border: 0em;
+  }
   .navBar{
     height: 2.75em;
     border-width: 0.1em;
@@ -552,6 +563,7 @@ h2{
   #squadSection{
     padding: 2.5em 2.5em 2.5em;
     border-width: 0.1em;
+    font-size: 70%;
   }
 
   .tournamentsStatus, .blogStatus{
