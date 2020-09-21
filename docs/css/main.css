@@ -1,0 +1,898 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #232d3b;
+  font-family: Esphimere;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.helixiosLogo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.navBar{
+  width: 100%;
+  height: 3.75em;
+  background-color: #232d3b;
+  border-bottom: solid #fe002a;
+  border-width:  0.171875em;
+
+}
+
+.navbar {
+  padding: 0px;
+}
+
+#navbarSupportedContent {
+  padding: 1em;
+}
+
+@font-face {
+  font-family: Esphimere;
+  src: url("../fonts/Esphimere.otf");
+}
+
+@font-face {
+  font-family: EsphimereBI;
+  src: url("../fonts/Esphimere Bold Italic.otf");
+}
+
+a{
+  font-family: Esphimere;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navLinks a{
+    /* padding-right: 6.5em; */
+    /* font-size: 1.4375em; */
+}
+
+.navLinks{
+  display: inline-block;
+  padding-top: 0.75em;
+  /* padding-left: 28.125em; */
+}
+
+#contact{
+  padding-right: 4em;
+}
+
+#signupButton{
+  font-size: 0.725em;
+  padding: 0.5em 1.2em;
+  background-color: #fe002a;
+  border-radius: 5px;
+}
+
+#signupButton:hover{
+  background-color: #ec0027;
+}
+
+
+.userIcon{
+  position: absolute;
+  right: 0px;
+  padding-top: 0.6em;
+  padding-right: 3.0em;
+}
+
+.arrow{
+  display: inline-block;
+  width: 55px;
+  position: absolute;
+  top: 295.5px;
+  opacity: 50%;
+}
+
+.arrow:hover{
+  opacity: 75%;
+}
+
+#rightArrow{
+  position: absolute;
+  right: 0em;
+}
+
+.welcomeText{
+  font-family: EsphimereBI;
+  font-size: 390.375%;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 0em;
+  text-shadow: #000000 0px 3px 6px;
+  padding-bottom: 15.0%;
+  line-height: normal;
+}
+
+.gameTray{
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 6.6em;
+  padding: 0px 10em 0em 7em;
+}
+
+.gameTray img {gameTr
+  transform: scale(0.8);
+}
+
+.gameLogo{
+  /* padding-right: 4.625em; */
+  /* padding-left: 4.625em; */
+  border-right: solid 1px #707070;
+  height: 100%;
+  opacity: 50%;
+}
+
+#bombsquadLogo{
+  border: 0px;
+}
+
+.gameLogo:hover{
+  opacity: 100%;
+  border-color: rgba(112, 112, 112, 0.5);
+}
+
+.gameHeader{
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.redDot{
+  color: #fe002a;
+}
+
+#tournamentsSection,  #blogSection{
+  background-color: #1E1E1E;
+  padding: 4.625em 11.7em 8em 11.7em;
+
+}
+
+h1{
+  display: inline;
+  font-size: 3.1875em;
+}
+
+/* .tournamentsStatus, .blogStatus{
+  display: inline;
+  font-size: 1.4em;
+  margin-top: 2em;
+  margin-left: 38em;
+} */
+
+.tournamentsStatus{
+  /* display: inline; */
+  font-size: 1.4em;
+  margin-bottom: 0px;
+  /* margin-top: .7em; */
+  /* margin-left: 38em; */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.blogStatus{
+  display: inline;
+  font-size: 1.4em;
+  /* margin-top: 2em;
+  margin-left: 38em; */
+}
+
+/* .blogStatus{
+  margin-left: 56em;
+} */
+
+ .tournamentsHeader, .blogHeader{
+   border-bottom: solid 1px #707070;
+   padding-bottom: 1.4375em;
+   margin-bottom: 4.25em;
+ }
+
+ .tournamentBanners{
+
+ }
+
+ .tournamentBanners img{
+   filter:grayscale(100%);
+   float: left;
+ }
+
+ .tournamentBanners img:hover{
+   filter:grayscale(0%);
+ }
+
+ .clear{
+   clear: both;
+ }
+
+ #blogSection{
+   background-color: #ffffff;
+ }
+
+ #blogSection{
+   color: #000000;
+ }
+
+ .blogStatus a{
+   color: #000000;
+ }
+
+ .blogBanners{
+ }
+
+ .blogBanners img{
+   transition-duration: 0.2s;
+   transition-timing-function: ease-out;
+ }
+
+ .blogBanners img:hover{
+
+ }
+
+ figure{
+   display: inline-block;
+   padding-right: 2.3em;
+ }
+
+ figure:last-child{
+   padding-right: 0em;
+ }
+
+ .blogBanners figcaption{
+   color: #000000;
+   font-size: 1.1em;
+   padding-top: 0.6875em;
+   text-align: center;
+ }
+
+ .blogLines{
+   border: solid 0.10em #fe002a;
+   width: 40%;
+   margin: 0 auto;
+   margin-top: 1.5625em;
+ }
+
+ .getInTouch {
+  padding-top: 4.6875em;
+ }
+
+ .gitText{
+   /* padding-top: 2.6875em; */
+   font-size: 1.2em;
+   display: inline-block;
+ }
+
+ #gitButton{
+    font-size: 1em;
+    padding: 0.8em 3.6em;
+    background-color: #fe002a;
+    /* margin-left: 35em; */
+    transition: border-radius 0.3s;
+ }
+
+ #gitButton:hover{
+   border-radius: 15px;
+   transition: border-radius 0.3s;
+   transition-timing-function: ease-out;
+ }
+
+ #squadSection{
+   background-color: #1E1E1E;
+   padding: 4em 5em 6.5em;
+   border-bottom: solid 0.171875em #fe002a;
+ }
+
+ .squadHeader{
+      padding-bottom: 2.5em;
+      text-align:  center;
+ }
+
+ .squadHeader h1{
+   font-size: 2.875em;
+ }
+
+ .squadImages{
+   text-align: center;
+ }
+
+ .squadImages img {
+ }
+
+ .squadImages figure{
+   padding-right: 5em;
+   transform: scale(0.8);
+ }
+
+ .squadImages figure:last-child{
+   padding-right: 0em;
+ }
+
+ .squadImages figcaption{
+   padding-top: 1.25em;
+   font-size: 1.5em;
+   color: #fe002a;
+ }
+
+.squadImages figcaption:last-child{
+  color: #ffffff;
+  padding-top: 0.5em;
+}
+
+#slideshow{
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.images{
+  background: url('../images/slideshow.jpg');
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 80%;
+  width: 300%;
+  animation: slideshow 35s linear infinite;
+}
+
+@keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -200%; }
+}
+
+#aboutFooter{
+  padding: 2.75em 6.75em 5.75em 6.75em;
+}
+
+.footerLogo{
+    /* padding-right: 9.9375em; */
+    display: inline-block;
+}
+
+.footerLogo figure figcaption{
+  text-align: center;
+}
+
+.footerLogo figcaption img{
+  padding-top: 1.625em;
+  padding-right: 1.1875em;
+  opacity: 0.5;
+}
+
+.footerLogo figcaption img:last-child{
+  padding-right: 0em;
+}
+
+.footerLogo figcaption img:hover{
+  opacity: 1;
+}
+
+.gitHeader{
+  display: inline-block;
+  /* padding: 0em 9.9375em; */
+  vertical-align: top;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+.gitHeader p{
+  display: inline-block;
+  padding-left: 0.8125em;
+}
+
+/* .gitHeader div{
+  font-size: 1.125em;
+  padding-top: 1.125em;
+} */
+
+.gitHeader div:last-child{
+  padding-top: 0em;
+}
+
+.gitHeader img{
+  opacity: 0.75;
+}
+
+.phoneIcon{
+  padding-right: 0.4375em;
+}
+
+.location{
+  display: inline-block;
+  /* padding-left: 9.9375em; */
+}
+
+.location h2{
+  display: inline-block;
+}
+
+.location img{
+  padding-bottom: 2.625em;
+  padding-top: 0.875em;
+}
+
+.location p{
+  display: inline-block;
+  /* padding-left: 2.5em; */
+}
+
+.redendFooter{
+  background: #fe002a;
+  padding: 3em 9.75em 2.5em;
+}
+
+.redendFooter h2{
+  display: inline-block;
+  font-size: 1.4375em;
+  padding-right: 0.9375em;
+}
+
+.redendFooter p{
+  display: inline;
+  font-size: 1em;
+}
+
+.redendFooter img{
+  display: inline-block;
+  transform: scale(0.75);
+  padding-left: 25em;
+  opacity: 0.9;
+  transition: top 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.redendFooter img:hover{
+  opacity: 1;
+  transition: top 0.2s;
+  transition-timing-function: ease-out;
+}
+
+/* #home {
+  padding: auto;
+}
+
+#home a {
+  margin: auto;
+} */
+/*
+#user {
+  scale: 0.9;
+} */
+
+#home {
+  margin-left: 9em;
+}
+
+/* .noUnderline {
+  text-emphasis: none;
+  text-decoration: none !important;
+} */
+
+  a:hover {
+    color: white;
+    text-decoration: none !important;
+}
+
+.customcarousel{
+  padding: 0px;
+}
+
+.blogStatus a:hover{
+  color: red;
+}
+
+.mobile-redendHead{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar{
+    height: 2.75em;
+    border-width: 0.1em;
+  }
+  .navLinks {
+    display: none;
+  }
+
+  .helixiosLogo{
+    width: 65%;
+  }
+
+  .welcomeText{
+    font-size: 150%;
+    padding-bottom: 15%;
+  }
+
+  .caro-img{
+    width: 200% !important;
+    margin-left: -50%;
+  }
+
+  .gameHeader{
+    font-size: 80%;
+    margin-top: 1.5em;
+  }
+
+  .gameTray{
+    margin: 0em 0em 2.5em;
+    padding: 0em 7em 0em 7em;
+  }
+
+  .gameLogo img{
+    width: 50%;
+  }
+
+  .gameLogo{
+      border: 0em;
+  }
+
+  .tournamentsHeader, .blogHeader{
+      padding-bottom: 0.6em;
+      margin-bottom: 2.25em;
+  }
+
+  .tournamentsHeader h1, .blogHeader h1, .squadHeader h1{
+    font-size: 1.75em;
+  }
+
+  #tournamentsSection, #blogSection{
+    padding: 2em 3em 4.5em;
+    text-align: center;
+  }
+
+  #squadSection{
+    padding: 2.5em 2.5em 2.5em;
+    border-width: 0.1em;
+  }
+
+  .tournamentsStatus, .blogStatus{
+    display: none;
+  }
+
+  #tournamentsSection .spacer, #blogSection .spacer{
+    display: none;
+  }
+
+  .blogLines{
+    margin: 1em auto;
+  }
+
+  .blogBanners figcaption{
+    font-size: 0.85em;
+  }
+
+  .getInTouch{
+    padding-top: 0em;
+  }
+
+  .gitText{
+    padding-top: 0em;
+    font-size: 1em;
+  }
+
+  #gitButton{
+    display: block;
+  }
+
+  .squadHeader{
+    padding-bottom: 0.5em;
+  }
+
+  #aboutFooter{
+    padding: 0em 0.75em 2.75em;
+  }
+
+  .footerLogo{
+    margin-top: 1em;
+  }
+
+  .helixiosLogo-f{
+    transform: scale(1) !important;
+    width: 100% ;
+  }
+
+  .social-bar{
+    margin: 0.1em !important;
+  }
+
+  .footerLogo figcaption img{
+    padding-top: 0em;
+    padding-right: 0.3em;
+  }
+
+  .gitHeader{
+    font-size: 80%;
+    border-left: solid 1px #fe002a;
+    margin-top: 2.5rem !important;
+  }
+
+  .gitHeader img{
+    transform: scale(0.9);
+  }
+
+  .location{
+    font-size: 75%;
+    margin-left: 1.1em;
+    margin-top: 2.5em !important;
+  }
+
+  .location img{
+    transform: scale(0.8);
+  }
+
+  .location h2{
+    margin-top: 0.5rem;
+  }
+
+  .redendFooter{
+    font-size: 80%;
+    text-align: center;
+    padding: 2em 2em;
+  }
+
+  .redendHead{
+    display: none;
+  }
+
+  .mobile-redendHead{
+    display: block;
+  }
+
+  .redendFooter h2{
+    padding: 0em;
+  }
+
+  .redendFooter img{
+    display: block;
+    transform: scale(0.5);
+    padding-left: 12.75em;
+  }
+
+  .images{
+    background-image: url("../images/mobile-slideshow.jpg");
+  }
+
+  #slideshow{
+    height: 146.3px;
+  }
+}
+
+#overlay {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #111;
+    z-index: 1000;
+}
+
+@keyframes overlay {
+
+}
+
+.overlay__inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1001;
+}
+
+.overlay__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1002;
+}
+
+.boxes {
+  --size: 32px;
+  --duration: 800ms;
+  height: calc(var(--size) * 2);
+  width: calc(var(--size) * 3);
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  margin-top: calc(var(--size) * 1.5 * -1);
+  -webkit-transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+          transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+}
+.boxes .box {
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.boxes .box:nth-child(1) {
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-animation: box1 var(--duration) linear infinite;
+          animation: box1 var(--duration) linear infinite;
+}
+.boxes .box:nth-child(2) {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+  -webkit-animation: box2 var(--duration) linear infinite;
+          animation: box2 var(--duration) linear infinite;
+}
+.boxes .box:nth-child(3) {
+  -webkit-transform: translate(100%, 100%);
+          transform: translate(100%, 100%);
+  -webkit-animation: box3 var(--duration) linear infinite;
+          animation: box3 var(--duration) linear infinite;
+}
+.boxes .box:nth-child(4) {
+  -webkit-transform: translate(200%, 0);
+          transform: translate(200%, 0);
+  -webkit-animation: box4 var(--duration) linear infinite;
+          animation: box4 var(--duration) linear infinite;
+}
+.boxes .box > div {
+  --background: #fe002a;
+  --top: auto;
+  --right: auto;
+  --bottom: auto;
+  --left: auto;
+  --translateZ: calc(var(--size) / 2);
+  --rotateY: 0deg;
+  --rotateX: 0deg;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  top: var(--top);
+  right: var(--right);
+  bottom: var(--bottom);
+  left: var(--left);
+  -webkit-transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+          transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+}
+.boxes .box > div:nth-child(1) {
+  --top: 0;
+  --left: 0;
+}
+.boxes .box > div:nth-child(2) {
+  --background: #b2001d;
+  --right: 0;
+  --rotateY: 90deg;
+}
+.boxes .box > div:nth-child(3) {
+  --background: #e50026;
+  --rotateX: -90deg;
+}
+.boxes .box > div:nth-child(4) {
+  --background: #303030;
+  --top: 0;
+  --left: 0;
+  --translateZ: calc(var(--size) * 3 * -1);
+}
+
+@-webkit-keyframes box1 {
+  0%,
+    50% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+}
+
+@keyframes box1 {
+  0%,
+    50% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+}
+@-webkit-keyframes box2 {
+  0% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+}
+@keyframes box2 {
+  0% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+}
+@-webkit-keyframes box3 {
+  0%,
+    50% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  100% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+}
+@keyframes box3 {
+  0%,
+    50% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+  100% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+  }
+}
+@-webkit-keyframes box4 {
+  0% {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  50% {
+    -webkit-transform: translate(200%, 100%);
+            transform: translate(200%, 100%);
+  }
+  100% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+}
+@keyframes box4 {
+  0% {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  50% {
+    -webkit-transform: translate(200%, 100%);
+            transform: translate(200%, 100%);
+  }
+  100% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+}
+
+@media screen and (max-width:570px) {
+  .gameTray {
+    padding-left: 3em ;
+    padding-right: 3em;
+  }
+
+  /* .gameTray img {
+    height: 1.2em;
+  } */
+}
