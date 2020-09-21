@@ -369,8 +369,8 @@ h1{
   opacity: 0.5;
 }
 
-.footerLogo figcaption img:last-child{
-  padding-right: 0em;
+.telegram{
+  padding-right: 0em !important;
 }
 
 .footerLogo figcaption img:hover{
@@ -909,4 +909,8 @@ h2{
     padding-left: 3em ;
     padding-right: 3em;
   }
+
+  /* .gameTray img {
+    height: 1.2em;
+  } */
 }
