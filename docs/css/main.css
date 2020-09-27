@@ -42,6 +42,11 @@ body{
   src: url("../fonts/Esphimere Bold Italic.otf");
 }
 
+@font-face {
+  font-family: Bebas;
+  src: url("../fonts/BebasNeue-Regular.otf");
+}
+
 a{
   font-family: Esphimere;
   color: #ffffff;
@@ -55,7 +60,7 @@ a{
 
 .navLinks{
   display: inline-block;
-  padding-top: 0.75em;
+  padding-top: 1em;
   /* padding-left: 28.125em; */
 }
 
@@ -120,7 +125,7 @@ a{
   padding: 0px 10em 0em 7em;
 }
 
-.gameTray img {gameTr
+.gameTray img {
   transform: scale(0.8);
 }
 
@@ -177,8 +182,16 @@ h1{
   /* margin-left: 38em; */
 }
 
+.rightTextAlign{
+  text-align: right;
+}
+
 .spacer {
   flex: 1 1 auto;
+}
+
+#tournamentsSection .spacer{
+  flex: 0.5 0.5 auto;
 }
 
 .blogStatus{
@@ -425,6 +438,7 @@ h2{
 
 .location p{
   display: inline-block;
+  opacity: 0.5
   /* padding-left: 2.5em; */
 }
 
@@ -489,12 +503,200 @@ h2{
   padding: 0px;
 }
 
-.blogStatus a:hover{
-  color: red;
+.blogStatus a:hover, .tournamentsStatus a:hover{
+  color: #fe002a;
 }
 
 .mobile-redendHead{
   display: none;
+}
+
+.registerForm{
+  background: url('../images/registerBG.png');
+  background-size: cover;
+  padding: 4em 0em 6em;
+  margin-bottom: 2.875em;
+}
+
+.registerForm h1{
+  display: inline-block;
+  font-family: Bebas;
+  /* padding-bottom: 0.35em; */
+}
+
+.registerForm p{
+  display: inline-block;
+  margin-right: 8em;
+  margin-bottom: 2em;
+}
+
+.norightMargin{
+  margin-right: 0em !important;
+}
+
+.noLeftpad{
+  padding: 0em !important;
+}
+
+.innerForm{
+  background: rgba(20, 20, 20, 0.75);
+  box-shadow: 3px 3px 33px rgba(0,0,0,0.6);
+  /* padding: 2.5em 0em 4.125em 3.125em; */
+  padding-left: 0px !important;
+}
+
+.inputForm{
+  padding: 1.5em 0em 2em 3.5em;
+}
+
+.inputForm2{
+  padding: 0em;
+}
+
+.inputForm input{
+  display: block;
+  border-style: none;
+  border-bottom: solid #fe002a 2px;
+  background-color: transparent;
+  color: white;
+  width: 20em;
+}
+
+.form-check-input {
+  width: 1em !important;
+  align-self: start;
+}
+
+.inputForm label{
+  color: #c7c7c7;
+  font-size: 90%;
+}
+
+.or{
+  color: #aeacac;
+}
+
+.registerForm :focus{
+  outline: none;
+}
+
+.googleBtn{
+  border-radius: 30px;
+  padding: 0.675em 3.0625em;
+  font-size: 0.8em;
+}
+
+.googleBtn img{
+  margin-right: 0.8em;
+  transform: scale(0.8);
+}
+
+.googleBtn img {
+	 -webkit-transition: 0.8s ease;
+	 transition: transform 0.8s ease;
+}
+ .googleBtn:hover img {
+	 -webkit-transition: 0.8s ease;
+	 transition: transform 0.8s ease;
+	 -webkit-transform: rotate(-180deg);
+	 transform: rotate(-180deg);
+}
+
+.signingUp{
+  margin-top: 1.5em;
+
+}
+
+.signingUp button{
+  margin-bottom: 2em;
+  display: inline-block;
+  /* margin-right: 6em; */
+}
+
+.signingUp p{
+  font-size: 85%;
+}
+
+.formSignupbutton{
+  /* padding: 0.5em 5em; */
+  background-color: #fe002a;
+  border-radius: 0px;
+}
+
+.formSignupbutton:hover{
+  background-color: #ec0027;
+}
+
+.formSignupbutton:focus{
+  background-color: #ec0027 !important;
+}
+
+.loginForm{
+  background-image: url('../images/loginBG.png');
+  background-position: center;
+  text-align: -webkit-center;
+  padding: 2.5em 0em 4em;
+}
+
+.loginForm form input{
+  width: 100%;
+}
+
+.innerlogForm{
+  padding-bottom: 3.125em;
+  padding-left: 0em;
+  text-align: left;
+  padding-top: 3em;
+}
+
+.inputlogForm{
+
+  padding: 0em 3.125em;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0.6; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  opacity: 0.6;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  opacity: 0.6;
+}
+
+.loginForm h1{
+  padding-bottom: 0.1em;
+}
+
+.loginForm input{
+  margin-bottom: 2.25em;
+}
+
+.loginButtons{
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.loginButtons button{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.loginUp{
+  margin-top: 0.25em;
+  color: #c7c7c7;
+}
+
+.inputlogForm input:last-child{
+  margin-bottom: 1em;
+}
+
+.loginButtons p{
+  margin: 0em;
+  margin-top: 0.75em;
+  font-size: 80%;
 }
 
 @media screen and (max-width: 600px) {
@@ -545,7 +747,7 @@ h2{
   }
 
   .gameLogo img{
-    width: 50%;
+    transform: scale(0.5);
   }
 
   .gameLogo{
@@ -603,6 +805,14 @@ h2{
 
   .squadHeader{
     padding-bottom: 0.5em;
+  }
+
+  .squadImages figcaption:last-child {
+    padding-top: 0.35em;
+  }
+
+  #bombsquadLogo {
+    margin-left: -2em;
   }
 
   #aboutFooter{
@@ -682,6 +892,67 @@ h2{
   #slideshow{
     height: 146.3px;
   }
+
+  .registerForm{
+    padding: 0em;
+    background-image: url("../images/mobile-registerBG.png");
+    background-position: center;
+  }
+
+  .registerForm p{
+    margin-right: 0em;
+  }
+
+  .registerForm form{
+    padding-left: 1em;
+  }
+
+  .registerForm h1{
+    margin-bottom: 0em;
+  }
+
+  .registerForm .googleBtn{
+    margin-top: 0.25em;
+  }
+
+  .loginForm .googleBtn{
+    margin-top: 1em;
+  }
+
+  .loginForm h1{
+    margin-bottom: 0.5rem;
+  }
+
+  .loginForm form{
+    padding: 0em;
+  }
+
+  .loginForm{
+    background-image: url("../images/mobile-loginBG.png");
+    padding: 0em;
+  }
+
+  .innerForm{
+    padding-right: 0px !important;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .inputForm{
+    padding-left: 0px;
+  }
+
+  .inputForm2{
+    padding-left: 0px;
+  }
+
+  .noLeftpad{
+    padding-left: 15px !important;
+  }
+
+  .inputForm input{
+    width: 150%;
+  }
+
 }
 
 #overlay {
@@ -692,10 +963,6 @@ h2{
     position: fixed;
     background: #111;
     z-index: 1000;
-}
-
-@keyframes overlay {
-
 }
 
 .overlay__inner {
@@ -800,6 +1067,14 @@ h2{
   --top: 0;
   --left: 0;
   --translateZ: calc(var(--size) * 3 * -1);
+}
+
+.redBottom {
+  border-bottom: red 2px solid;
+}
+
+.padify {
+
 }
 
 @-webkit-keyframes box1 {
