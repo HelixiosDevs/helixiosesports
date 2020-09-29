@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
   </head>
+  <style>
+    .navLinks{
+      padding-top: 0.8em;
+    }
+  </style>
   <body>
 
     <div id="overlay">
@@ -98,16 +103,22 @@
                   </div>
                 </div>
 
+
                 <div class="col">
                   <div class="row d-flex align-items-center">
-                    <div><a href="login.html" id="signupButton">Sign Up / Sign Up</a></div>
-                  </div>
+                <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle hiUsername" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Hi, <span style="font-size: 120%;">GanGro777</span>
+                </button>
+                <div class="dropdown-menu dropDown">
+                  <a class="dropdown-item" href="#">My Profile</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Logout</a>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <!-- <div class="col"><a href="#" id=""><span class="redDot">•</span> </a></div> -->
-                <!-- <div class="col"><a href="#" id="blog"><span class="redDot">•</span> Blog</a></div>
-                <div class="col"><a href="#" id="about"><span class="redDot">•</span> About</a></div>
-                <div class="col"><a href="#" id="contact"><span class="redDot">•</span> Contact</a></div>     -->
               </div>
            </div>
 
@@ -150,12 +161,19 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
+             -->
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <a href="login.html" class="signupButton-mobile btn btn-danger btn-sm my-2 my-sm-0">Sign Up / Sign In</a>
+            <div class="btn-group dropright">
+            <button type="button" class="btn btn-danger dropdown-toggle hiUsername" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hi, <span style="font-size: 110%;">GanGro777</span>
+            </button>
+            <div class="dropdown-menu dropDown">
+              <a class="dropdown-item" href="#">My Profile</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
           </form>
         </div>
       </nav>
