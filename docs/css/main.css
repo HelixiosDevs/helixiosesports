@@ -741,6 +741,10 @@ h2{
     margin-left: -50%;
   }
 
+  .carousel-item{
+    overflow-x: hidden;
+  }
+
   .gameHeader{
     font-size: 80%;
     margin-top: 1.5em;
