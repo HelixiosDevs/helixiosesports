@@ -211,10 +211,6 @@ h1{
    margin-bottom: 4.25em;
  }
 
- .tournamentBanners{
-
- }
-
  .tournamentBanners img{
    filter:grayscale(100%);
    float: left;
@@ -316,9 +312,6 @@ h1{
 
  .squadImages{
    text-align: center;
- }
-
- .squadImages img {
  }
 
  .squadImages figure{
@@ -512,7 +505,7 @@ h2{
 }
 
 .registerForm{
-  background: url('../images/registerBG.png');
+  background: url('../images/registerBG.jpg');
   background-size: cover;
   padding: 4em 0em 6em;
   margin-bottom: 2.875em;
@@ -632,7 +625,7 @@ h2{
 }
 
 .loginForm{
-  background-image: url('../images/loginBG.png');
+  background-image: url('../images/loginBG.jpg');
   background-position: center;
   text-align: -webkit-center;
   padding: 2.5em 0em 4em;
@@ -702,6 +695,11 @@ h2{
 .graySmalltext{
   font-size: 80%;
   color: #c7c7c7;
+}
+
+.errorText{
+  font-size: 80%;
+  color: #ffcc00;
 }
 
 @media screen and (max-width: 600px) {
@@ -904,7 +902,7 @@ h2{
 
   .registerForm{
     padding: 0em;
-    background-image: url("../images/mobile-registerBG.png");
+    background-image: url("../images/mobile-registerBG.jpg");
     background-position: center;
   }
 
@@ -937,7 +935,7 @@ h2{
   }
 
   .loginForm{
-    background-image: url("../images/mobile-loginBG.png");
+    background-image: url("../images/mobile-loginBG.jpg");
     padding: 0em;
   }
 
