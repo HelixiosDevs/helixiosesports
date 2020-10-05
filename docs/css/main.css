@@ -236,16 +236,14 @@ h1{
    color: #000000;
  }
 
- .blogBanners{
- }
-
  .blogBanners img{
+   filter: brightness(1);
    transition-duration: 0.2s;
-   transition-timing-function: ease-out;
+   transition-timing-function: ease;
  }
 
  .blogBanners img:hover{
-
+   filter: brightness(1.15);
  }
 
  figure{
@@ -692,6 +690,11 @@ h2{
   font-size: 80%;
 }
 
+.playerProfile{
+  background-image: url('../images/profileBG.jpg');
+  background-position: center;
+}
+
 .graySmalltext{
   font-size: 80%;
   color: #c7c7c7;
@@ -939,6 +942,19 @@ h2{
     padding: 0em;
   }
 
+  .playerProfile{
+    background-image: url('../images/mobile-profileBG.jpg');
+    background-position: center;
+  }
+
+  .playerProfile p, .playerProfile button{
+    margin-left: 0.9em;
+  }
+
+  .editProfile .graySmalltext p:first-child{
+    margin-left: 0em;
+  }
+
   .innerForm{
     padding-right: 0px !important;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
@@ -962,7 +978,7 @@ h2{
 
   .graySmalltext{
     justify-content: center;
-    margin-left: 0px !important;
+    margin-left: -15px !important;
   }
 
 }
@@ -1196,8 +1212,63 @@ h2{
     padding-left: 3em ;
     padding-right: 3em;
   }
+}
 
-  /* .gameTray img {
-    height: 1.2em;
-  } */
+.tournamentPage{
+  margin-bottom: 2.875em;
+}
+
+.tournamentCover{
+  background-image: url('../images/d2-BG.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.tournamentCover img{
+  filter: drop-shadow(3px 3px 30px rgba(0, 0, 0, 0.55));
+}
+
+.tournamentCover h1{
+  font-family: Bebas;
+  font-size: 110px;
+  text-shadow: 1.5px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.tournamentInfo{
+  background-color: #1E1E1E;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.tournamentHeadInfo{
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: solid 1px #707070;
+}
+.tournamentHeadInfo img{
+  border-right: solid 1px #707070;
+}
+
+.greyButton{
+  border-radius: 0px;
+}
+
+.headInfo span:first-child{
+  font-size: 143.75%;
+}
+
+.headInfo span:last-child{
+  font-size: 85%;
+  color: #c7c7c7;
+}
+
+.aboutTourn{
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  font-size: 90%;
+}
+
+.aboutText{
+  color: #c7c7c7;
+  justify-content: space-between;
 }
