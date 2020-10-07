@@ -1,0 +1,136 @@
+.tournamentPage{
+  margin-bottom: 2.875em;
+}
+
+.tournamentCover{
+  background-image: url('../images/d2-BG.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.tournamentCover img{
+  filter: drop-shadow(3px 3px 30px rgba(0, 0, 0, 0.55));
+}
+
+.tournamentCover h1{
+  font-family: Bebas;
+  font-size: 110px;
+  text-shadow: 1.5px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.tournamentInfo{
+  background-color: #1E1E1E;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.tournamentHeadInfo{
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: solid 1px #707070;
+}
+.tournamentHeadInfo img{
+  border-right: solid 1px #707070;
+}
+
+.greyButton{
+  border-radius: 0px;
+}
+
+.headInfo span:first-child{
+  font-size: 143.75%;
+}
+
+.headInfo span:last-child{
+  font-size: 85%;
+  color: #c7c7c7;
+}
+
+.aboutTourn{
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  font-size: 90%;
+}
+
+.aboutText{
+  color: #c7c7c7;
+  justify-content: space-between;
+}
+
+.tournamentSlogan{
+  font-family:Bebas;
+  font-size:250%;
+  color:#fff;
+}
+
+.hoverUnderline:hover{
+  text-decoration: underline !important;
+}
+
+.modal-open{
+    padding-right: 0px !important;
+}
+
+.modal-content{
+  background-image: url('../images/mobile-loginBG.jpg');
+  background-size: cover;
+}
+
+.modal-header, .modal-body, .modal-footer{
+  background: rgba(20, 20, 20, 0.75);
+  border: 0px;
+  padding-left: 2em;
+}
+
+.modal-header{
+  padding-bottom: 0.2em;
+}
+
+.modal-body{
+    padding-top: 0.4em;
+}
+
+.modal-title{
+  font-size: 2.25em;
+  font-family: Bebas;
+  border-bottom: solid 0.5px #fe002a;
+}
+
+.close{
+  color: #c7c7c7;
+}
+
+.close:hover, .close:focus{
+  color: #fff;
+  outline: none;
+}
+
+.tournInputbox{
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fe002a;
+  color: #fff;
+}
+
+.tournInputbox:focus{
+  outline: none;
+}
+
+.tournRegform ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 0.8; /* Firefox */
+  color: #c7c7c7;
+  font-size: 90%;
+}
+
+.tournRegform :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  opacity: 0.8;
+  color: #c7c7c7;
+  font-size: 90%;
+}
+
+.tournRegform ::-ms-input-placeholder { /* Microsoft Edge */
+  opacity: 0.8;
+  color: #c7c7c7;
+  font-size: 90%;
+}
