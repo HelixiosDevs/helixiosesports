@@ -29,7 +29,7 @@
   margin-bottom: 3rem;
   border-bottom: solid 1px #707070;
 }
-.tournamentHeadInfo img{
+.tournamentHeadInfo img:first-child{
   border-right: solid 1px #707070;
 }
 
@@ -63,10 +63,6 @@
   color:#fff;
 }
 
-.hoverUnderline:hover{
-  text-decoration: underline !important;
-}
-
 .modal-open{
     padding-right: 0px !important;
 }
@@ -84,6 +80,10 @@
 
 .modal-footer{
   padding: 0rem 0.75rem 1.75rem;
+}
+
+#rulesModal .modal-footer{
+  padding: 0.8rem 0.75rem 1.25rem;
 }
 
 .modal-header{
@@ -145,10 +145,18 @@
   font-size: 90%;
 }
 
+.redDot:hover{
+  color: #fe002a;
+}
+
 @media screen and (max-width: 600px)  {
 
   .modal-open{
       padding-right: 0px !important;
+  }
+
+  .modal-content{
+    background-position: center;
   }
 
   .tournamentCover img{
@@ -161,7 +169,7 @@
     margin-bottom: 4rem;
   }
 
-  .tournamentHeadInfo img{
+  .tournamentHeadInfo img:first-child{
     border-right: 0;
     width: 40%;
     margin: 0px 0px 1.5rem!important;
@@ -233,4 +241,14 @@
   .discordHead{
     padding-top: 0.5rem !important;
   }
+
+  .steamLogo{
+    width: 20px;
+    padding-right: 0.1rem;
+  }
+
+  .inputRow .tournInputbox:last-child{
+    font-size: 85%;
+  }
+
 }
