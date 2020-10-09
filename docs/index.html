@@ -194,7 +194,7 @@
     <div class="tournBtns">
       <button class="btn btn-danger formSignupbutton px-5 py-2 mx-4" data-toggle="modal" data-target="#registerModal">REGISTER</button>
       <div class="modal fade " id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLongTitle">REGISTRATION</h5>
@@ -206,11 +206,11 @@
               <p style="opacity: 0.8; font-size:90%;" class="pt-2">Only the team leader must fill this form.<br>All players must have a registered Helixios account.</p>
                 <form class="container-fluid tournRegform" action="index.html" method="post">
                   <div class="row pb-3 pt-2"><input class="tournInputbox" type="text" name="teamname" placeholder="Team Name" required></div>
-                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Team Member Username" required>&nbsp; @ <!--<img src="images/steam.svg" width="50%" alt="@"/>--><input class="tournInputbox" type="text" name="ign" placeholder="CS:GO IGN" required></div>
-                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Member 2 Username" required>&nbsp; @<input class="tournInputbox" type="text" name="ign" placeholder="CS:GO IGN" required></div>
-                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Member 3 Username" required>&nbsp; @<input class="tournInputbox" type="text" name="ign" placeholder="CS:GO IGN" required></div>
-                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Member 4 Username" required>&nbsp; @<input class="tournInputbox" type="text" name="ign" placeholder="CS:GO IGN" required></div>
-                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Member 5 Username" required>&nbsp; @<input class="tournInputbox" type="text" name="ign" placeholder="CS:GO IGN" required></div>
+                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Team Member Username" required>&nbsp; <img class="steamLogo" src="images/steam.svg" width="23rem" alt="@"/><input class="tournInputbox" type="text" name="ign" placeholder="Steam Name" required></div>
+                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Member 2 Username" required>&nbsp; <img class="steamLogo" src="images/steam.svg" width="23rem" alt="@"/><input class="tournInputbox" type="text" name="ign" placeholder="Steam Name" required></div>
+                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Member 3 Username" required>&nbsp; <img class="steamLogo" src="images/steam.svg" width="23rem" alt="@"/><input class="tournInputbox" type="text" name="ign" placeholder="Steam Name" required></div>
+                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Member 4 Username" required>&nbsp; <img class="steamLogo" src="images/steam.svg" width="23rem" alt="@"/><input class="tournInputbox" type="text" name="ign" placeholder="Steam Name" required></div>
+                  <div class="row py-3 inputRow"><input class="tournInputbox" type="text" name="teamname" placeholder="Member 5 Username" required>&nbsp; <img class="steamLogo" src="images/steam.svg" width="23rem" alt="@"/><input class="tournInputbox" type="text" name="ign" placeholder="Steam Name" required></div>
                   <div class="row align-items-center">
                     <p class="my-3">Total amount payable: &nbsp; </p>
                     <span style="font-size:125%;">₹50</span>
@@ -239,20 +239,33 @@
                 <div class="modal-body pt-3">
 
                   <h5>Game Rules</h5>
-                  <div class="container-fluid">
 
 
-                  <p class="row pt-2" style="font-size:90%;">
-                      <span class=""><span class="text-danger">•</span> Players need to be registered on the website before enrolling in any kind of tournament. </span><br>
-                      <span class=""><span class="text-danger">•</span> Players need to join the server 15 minutes before the match starts. Warmup time will be allowed before the start of the match.</span> <br>
-                      <span class=""><span class="text-danger">•</span> The details for joining the server will be shared 30 minutes before the scheduled start time of the match in My Tournaments section.</span><br>
-                      <span class=""><span class="text-danger">•</span> Starting side will be chosen by an additional knife round before the start of the match.</span><br>
-                      <span class=""><span class="text-danger">•</span> The first team to win 16 rounds will be declared victor of the match and will advance in the tournament.</span><br>
-                      <span class=""><span class="text-danger">•</span> No outside applications / executables / dll’s / workshop items, read any method of gaining an advantage over the other team is allowed in the tournament.</span><br>
-                      <span class=""><span class="text-danger">•</span> Players not ready within 15 minutes (outside technical issues handled by an Admin) of their match will forfeit that match.</span><br>
-                  </p>
+                  <div class="pt-2" style="font-size:90%;">
+                      <div class=""><span class="text-danger">•</span> Players need to be registered on the website before enrolling in any kind of tournament. </div><br>
+                      <div class=""><span class="text-danger">•</span> Players need to join the server 15 minutes before the match starts. Warmup time will be allowed before the start of the match.</div> <br>
+                      <div class=""><span class="text-danger">•</span> The details for joining the server will be shared 30 minutes before the scheduled start time of the match in <a href="" class="redDot hoverUnderline">My Tournaments</a> section.</div><br>
+                      <div class=""><span class="text-danger">•</span> Starting side will be chosen by an additional knife round before the start of the match.</div><br>
+                      <div class=""><span class="text-danger">•</span> The first team to win 16 rounds will be declared victor of the match and will advance in the tournament.</div><br>
+                      <div class=""><span class="text-danger">•</span> No outside applications / executables / dll’s / workshop items, read any method of gaining an advantage over the other team is allowed in the tournament.</div><br>
+                      <div class=""><span class="text-danger">•</span> Players not ready within 15 minutes (outside technical issues handled by an Admin) of their match will forfeit that match.</div><br>
+                  </div>
 
-</div>
+                  <hr class="mt-0" style="border-top: 1px solid rgba(255,255,255,.25);">
+
+                  <h5>How To Play</h5>
+
+
+                  <div class="pt-2" style="font-size:90%;">
+                      <div class=""><span class="text-danger">•</span> Open the <a href="" class="redDot hoverUnderline">My Tournaments</a> Section and look for the game server’s ip and password.  </div><br>
+                      <div class=""><span class="text-danger">•</span> Open Counter-Strike:Global Offensive and go to play section.</div> <br>
+                      <div class=""><span class="text-danger">•</span> On the drop down list select the option for “Browse Community Servers”.</div><br>
+                      <div class=""><span class="text-danger">•</span> Search for “Helixios_eSports” in the search bar and select it.</div><br>
+                      <div class=""><span class="text-danger">•</span> When prompted, enter the password which was given on the tournament section along with other info. </div><br>
+                      <div class=""><span class="text-danger">•</span> Your game will start connecting to the server.</div><br>
+                  </div>
+
+
 
                 </div>
                 <div class="modal-footer justify-content-center">
