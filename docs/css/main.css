@@ -701,6 +701,7 @@ h2{
 }
 
 .errorText{
+  display: block;
   font-size: 80%;
   color: #ffcc00;
 }
@@ -1214,61 +1215,6 @@ h2{
   }
 }
 
-.tournamentPage{
-  margin-bottom: 2.875em;
-}
-
-.tournamentCover{
-  background-image: url('../images/d2-BG.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.tournamentCover img{
-  filter: drop-shadow(3px 3px 30px rgba(0, 0, 0, 0.55));
-}
-
-.tournamentCover h1{
-  font-family: Bebas;
-  font-size: 110px;
-  text-shadow: 1.5px 3px 6px rgba(0, 0, 0, 0.8);
-}
-
-.tournamentInfo{
-  background-color: #1E1E1E;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-}
-
-.tournamentHeadInfo{
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
-  border-bottom: solid 1px #707070;
-}
-.tournamentHeadInfo img{
-  border-right: solid 1px #707070;
-}
-
-.greyButton{
-  border-radius: 0px;
-}
-
-.headInfo span:first-child{
-  font-size: 143.75%;
-}
-
-.headInfo span:last-child{
-  font-size: 85%;
-  color: #c7c7c7;
-}
-
-.aboutTourn{
-  padding-left: 6.5rem;
-  padding-right: 6.5rem;
-  font-size: 90%;
-}
-
-.aboutText{
-  color: #c7c7c7;
-  justify-content: space-between;
+.hoverUnderline:hover{
+  text-decoration: underline !important;
 }
