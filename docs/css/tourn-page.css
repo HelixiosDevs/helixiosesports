@@ -2,7 +2,6 @@
   margin-bottom: 2.875em;
 }
 
-
 .tournamentCover{
   background-image: url('../images/d2-BG.png');
   background-size: cover;
@@ -10,7 +9,7 @@
 }
 
 .tournamentCover img{
-  filter: drop-shadow(3px 3px 30px rgba(0, 0, 0, 0.55));
+  filter: drop-shadow(3px 3px 30px rgba(0, 0, 0, 0.25));
 }
 
 .tournamentCover h1{
@@ -83,12 +82,17 @@
   padding-left: 2em;
 }
 
+.modal-footer{
+  padding: 0rem 0.75rem 1.75rem;
+}
+
 .modal-header{
   padding-bottom: 0.2em;
 }
 
 .modal-body{
     padding-top: 0.4em;
+    padding-bottom: 0.6rem;
 }
 
 .modal-title{
@@ -107,11 +111,16 @@
 }
 
 .tournInputbox{
-  width: 85%;
+  width: 60%;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fe002a;
   color: #fff;
+}
+
+.inputRow .tournInputbox:last-child{
+  width: 25%;
+  text-align: center;
 }
 
 .tournInputbox:focus{
@@ -134,4 +143,94 @@
   opacity: 0.8;
   color: #c7c7c7;
   font-size: 90%;
+}
+
+@media screen and (max-width: 600px)  {
+
+  .modal-open{
+      padding-right: 0px !important;
+  }
+
+  .tournamentCover img{
+    margin-top: 2rem;
+    width: 75%;
+  }
+
+  .tournamentCover h1{
+    font-size: 60px;
+    margin-bottom: 4rem;
+  }
+
+  .tournamentHeadInfo img{
+    border-right: 0;
+    width: 40%;
+    margin: 0px 0px 1.5rem!important;
+    padding: 0px !important;
+  }
+
+  .tournamentInfo{
+    background-color: #1E1E1E;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .headInfo:last-child{
+    margin-right: 0px !important;
+  }
+
+  .headInfo{
+    text-align: center;
+    font-size: 85%;
+    padding: 0px 1rem !important;
+  }
+
+  .headInfoRow{
+    margin-bottom: 2rem;
+  }
+
+  .tournBtns .formSignupbutton{
+    margin: 0px !important;
+    margin-right: 0.5rem !important;
+  }
+
+  .tournamentSlogan{
+    margin-top: 1rem;
+    font-size: 230%;
+  }
+
+  .aboutTourn{
+    padding: 0px;
+
+  }
+
+  .aboutTournHead{
+    padding: 0px !important;
+    margin: 0px !important;
+    justify-content: center !important;
+  }
+
+  .breakMobile{
+    display: none;
+  }
+
+  .aboutText p{
+    padding: 0px 3.3rem;
+  }
+
+  .aboutTournBody{
+    padding-bottom: 1.5rem !important;
+  }
+
+  .aboutTournBody .headInfoRow{
+    margin-bottom: 0px;
+  }
+
+  .aboutTournBody .headInfo{
+    margin-bottom: 1.5rem;
+    font-size: 90%;
+  }
+
+  .discordHead{
+    padding-top: 0.5rem !important;
+  }
 }
