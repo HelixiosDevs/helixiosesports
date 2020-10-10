@@ -252,3 +252,89 @@
   }
 
 }
+
+/*My Tournaments Section*/
+
+.myTournPage{
+  background-image: url('../images/myTournBG.png');
+  background-position: top;
+  background-size: cover;
+  padding: 2.75rem 12rem 6rem;
+  margin-bottom: 2.875em;
+}
+
+.myTournPage h1{
+  font-family: Bebas;
+}
+
+.myTournPage h2{
+  font-family: Bebas;
+  padding-bottom: 1rem;
+}
+
+.innerTourn{
+  background: rgba(20, 20, 20, 0.75);
+  box-shadow: 3px 3px 33px rgba(0,0,0,0.6);
+  padding-bottom: 5rem !important;
+}
+
+.myTournBody{
+  background-color:#1f1f1f;
+}
+
+.tournIcon{
+  background-color: #000000;
+  padding: 0.75rem;
+  border: 3px solid #fff;
+}
+
+.myTournPage .headInfo{
+  font-size: 85%;
+  margin-right: 2rem;
+}
+
+.card{
+  display: block;
+  background: none;
+  border: none;
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .myTournPage{
+      padding: 0em;
+    }
+
+    .innerTourn{
+      padding-top: 2.5rem !important;
+    }
+
+    .myTournPage .tournBtns{
+      margin: 0px !important;
+      padding: 0px !important;
+    }
+
+    .myTournBody{
+      padding: 2rem 0px;
+    }
+
+    .myTournPage .headInfoRow{
+      padding: 0rem 3rem !important;
+      text-align: center;
+    }
+
+    .myTournBody .formSignupbutton{
+      margin: 0px !important;
+      margin-bottom: 1rem !important;
+    }
+
+    .myTournPage h2{
+      padding-top: 1rem;
+    }
+
+    .tournIcon{
+      margin: 0rem 1rem;
+    }
+
+}
