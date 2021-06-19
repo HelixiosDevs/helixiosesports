@@ -211,7 +211,19 @@ h1{
    margin-bottom: 4.25em;
  }
 
+ .contain-button{
+   position: relative;
+ }
+
+ .contain-button button{
+   position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+ }
+
  .tournamentBanners img{
+
    filter:grayscale(100%);
    float: left;
  }
@@ -706,7 +718,19 @@ h2{
   color: #ffcc00;
 }
 
+.mobile-caro-mainbanner{
+  display: none !important;
+}
+
 @media screen and (max-width: 600px) {
+
+  .caro-mainbanner{
+    display: none !important;
+  }
+
+  .mobile-caro-mainbanner{
+    display: block !important;
+  }
 
   .navbar{
     border-bottom: solid 0.1em #fe002a;
@@ -1213,8 +1237,8 @@ h2{
     padding-left: 3em ;
     padding-right: 3em;
   }
-}
 
-.hoverUnderline:hover{
-  text-decoration: underline !important;
+  /* .gameTray img {
+    height: 1.2em;
+  } */
 }

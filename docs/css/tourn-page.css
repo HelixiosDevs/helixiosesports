@@ -3,7 +3,7 @@
 }
 
 .tournamentCover{
-  background-image: url('../images/d2-BG.png');
+  background-image: url('../images/d2-BG.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -270,6 +270,10 @@
 .myTournPage h2{
   font-family: Bebas;
   padding-bottom: 1rem;
+}
+
+.myTournPage h2 a{
+  font-family: Bebas;
 }
 
 .innerTourn{
