@@ -186,6 +186,10 @@ h1{
   /* margin-left: 38em; */
 }
 
+.tournamentsStatus-mobile{
+  display: none;
+}
+
 .rightTextAlign{
   text-align: right;
 }
@@ -858,7 +862,7 @@ h2{
   }
 
   #tournamentsSection, #blogSection{
-    padding: 2em 3em 4.5em;
+    padding: 2em 3em 3em;
     text-align: center;
   }
 
@@ -870,6 +874,12 @@ h2{
 
   .tournamentsStatus, .blogStatus{
     display: none;
+  }
+
+  .tournamentsStatus-mobile{
+    display: block;
+    margin: 0px;
+    font-size: 1.5em;
   }
 
   #tournamentsSection .spacer, #blogSection .spacer{
