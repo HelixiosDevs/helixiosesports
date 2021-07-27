@@ -3,7 +3,7 @@ html{
 }
 body{
   background-color: #232d3b;
-  font-family: Esphimere;
+  font-family: Rajdhani;
   color: #ffffff;
   overflow-x: hidden;
 }
@@ -33,8 +33,8 @@ body{
 }
 
 @font-face {
-  font-family: Esphimere;
-  src: url("../fonts/Esphimere.otf");
+  font-family: Rajdhani;
+  src: url("../fonts/Rajdhani-Semibold.ttf");
 }
 
 @font-face {
@@ -48,14 +48,14 @@ body{
 }
 
 a{
-  font-family: Esphimere;
+  font-family: Rajdhani;
   color: #ffffff;
   text-decoration: none;
 }
 
 .navLinks a{
     /* padding-right: 6.5em; */
-    /* font-size: 1.4375em; */
+    font-size: 1.15em;
 }
 
 .navLinks{
@@ -69,7 +69,7 @@ a{
 }
 
 #signupButton{
-  font-size: 80%;
+  font-size: 85%;
   padding: 0.5em 1.2em;
   background-color: #fe002a;
   border-radius: 5px;
@@ -80,7 +80,7 @@ a{
 }
 
 .hiUsername{
-  font-size: 80%;
+  font-size: 85%;
   padding: 0.25em 1.2em;
   background-color: #fe002a;
   border-radius: 5px;
@@ -99,7 +99,7 @@ button:focus{
 }
 
 .dropDown{
-  font-size: 80%;
+  font-size: 85%;
   min-width: 9rem;
 }
 
@@ -120,31 +120,28 @@ button:focus{
 
 .gameTray{
   text-align: center;
-  margin-top: 4em;
+  margin-top: 3.5em;
   margin-bottom: 6.6em;
-  padding: 0px 10em 0em 7em;
+  padding: 0px 4.5em 0em 4.5em;
 }
 
 .gameTray img {
-  transform: scale(0.8);
-  display: block;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.gameTray div {
-  padding: 0px;
+  display : block;
+  transform: scale(0.78);
+  margin: 0 auto;
 }
 
 .gameLogo{
-  /* padding-right: 4.625em; */
-  /* padding-left: 4.625em; */
+  max-width: 100%;
+  margin: 0px;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
   border-right: solid 1px #707070;
   height: 100%;
   opacity: 50%;
 }
 
-#bombsquadLogo{
+#lastLogo{
   border: 0px;
 }
 
@@ -154,9 +151,9 @@ button:focus{
 }
 
 .gameHeader{
-  font-size: 1.8em;
+  font-size: 2em;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 
 .redDot{
@@ -171,7 +168,7 @@ button:focus{
 
 h1{
   display: inline;
-  font-size: 3.1875em;
+  font-size: 3.3em;
 }
 
 /* .tournamentsStatus, .blogStatus{
@@ -183,7 +180,7 @@ h1{
 
 .tournamentsStatus{
   /* display: inline; */
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin-bottom: 0px;
   /* margin-top: .7em; */
   /* margin-left: 38em; */
@@ -203,7 +200,7 @@ h1{
 
 .blogStatus{
   display: inline;
-  font-size: 1.4em;
+  font-size: 1.5em;
   /* margin-top: 2em;
   margin-left: 38em; */
 }
@@ -218,24 +215,32 @@ h1{
    margin-bottom: 4.25em;
  }
 
- .contain-button{
+ .contain-tbanner{
    position: relative;
+   overflow: hidden;
  }
 
- .contain-button button{
-   position: absolute;
-  top: 100%;
-  left: 100%;
-  transform: translate(-100%, -100%);
+ .contain-tbanner h2{
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-90%, -90%);
+  transition: display 0.5s ease;
+  display: none;
+ }
+
+.tournamentBanners img:hover + h2{
+   display: block;
  }
 
  .tournamentBanners img{
-
+   transition: transform .2s;
    filter:grayscale(100%);
    float: left;
  }
 
  .tournamentBanners img:hover{
+   transform: scale(1.12);
    filter:grayscale(0%);
  }
 
@@ -256,12 +261,17 @@ h1{
  }
 
  .blogBanners img{
+   position: relative;
+   top: 0px;
+   border-radius: 7.5px;
    filter: brightness(1);
    transition-duration: 0.2s;
    transition-timing-function: ease;
  }
 
  .blogBanners img:hover{
+   position: relative;
+   top: -10px;
    filter: brightness(1.15);
  }
 
@@ -276,7 +286,7 @@ h1{
 
  .blogBanners figcaption{
    color: #000000;
-   font-size: 1.1em;
+   font-size: 1.25em;
    padding-top: 0.6875em;
    text-align: center;
  }
@@ -318,13 +328,50 @@ h1{
    border-bottom: solid 0.171875em #fe002a;
  }
 
+ .socials-overlay{
+   display: flex;
+   justify-content: center;
+   background: rgba(210,43,43,0.4);
+   z-index: 1;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+   -webkit-transition: opacity 0.25s;
+   -moz-transition: opacity 0.25s;
+   transition: opacity 0.25s;
+ }
+
+ .socials-overlay:hover {
+   opacity: 1;
+ }
+
+ .socials-overlay img{
+   width: 22%;
+ }
+
+ .dp-container{
+   border: 0.2rem solid #fff;
+   border-radius: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+
+ .squadImages img{
+   position: relative;
+ }
+
  .squadHeader{
       padding-bottom: 2.5em;
       text-align:  center;
  }
 
  .squadHeader h1{
-   font-size: 2.875em;
+   font-size: 3em;
  }
 
  .squadImages{
@@ -342,13 +389,14 @@ h1{
 
  .squadImages figcaption{
    padding-top: 1.25em;
-   font-size: 1.5em;
+   font-size: 1.75em;
    color: #fe002a;
  }
 
 .squadImages figcaption:last-child{
+  font-size: 1.45em;
   color: #ffffff;
-  padding-top: 0.5em;
+  padding-top: 0.2em;
 }
 
 #slideshow{
@@ -459,13 +507,13 @@ h2{
 
 .redendFooter h2{
   display: inline-block;
-  font-size: 1.4375em;
+  font-size: 1.6em;
   padding-right: 0.9375em;
 }
 
 .redendFooter p{
   display: inline;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .redendFooter img{
@@ -579,7 +627,7 @@ h2{
 
 .inputForm label{
   color: #c7c7c7;
-  font-size: 90%;
+  font-size: 110%;
 }
 
 .or{
@@ -593,7 +641,7 @@ h2{
 .googleBtn{
   border-radius: 30px;
   padding: 0.675em 3.0625em;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .googleBtn img{
@@ -624,7 +672,7 @@ h2{
 }
 
 .signingUp p{
-  font-size: 85%;
+  font-size: 95%;
 }
 
 .formSignupbutton{
@@ -706,7 +754,7 @@ h2{
 .loginButtons p{
   margin: 0em;
   margin-top: 0.75em;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 .playerProfile{
@@ -715,13 +763,13 @@ h2{
 }
 
 .graySmalltext{
-  font-size: 80%;
+  font-size: 90%;
   color: #c7c7c7;
 }
 
 .errorText{
   display: block;
-  font-size: 80%;
+  font-size: 90%;
   color: #ffcc00;
 }
 
@@ -779,7 +827,7 @@ h2{
   }
 
   .gameHeader{
-    font-size: 80%;
+    font-size: 1.1em;
     margin-top: 1.5em;
   }
 
@@ -801,8 +849,12 @@ h2{
       margin-bottom: 2.25em;
   }
 
-  .tournamentsHeader h1, .blogHeader h1, .squadHeader h1{
-    font-size: 1.75em;
+  .tournamentsHeader h1, .blogHeader h1{
+    font-size: 2.2em;
+  }
+
+  .squadHeader h1{
+    font-size: 2.5em;
   }
 
   #tournamentsSection, #blogSection{
@@ -829,7 +881,7 @@ h2{
   }
 
   .blogBanners figcaption{
-    font-size: 0.85em;
+    font-size: 1em;
   }
 
   .getInTouch{
@@ -924,7 +976,7 @@ h2{
   .redendFooter img{
     display: block;
     transform: scale(0.5);
-    padding-left: 12.75em;
+    padding-left: 15.5em;
   }
 
   .images{
@@ -1243,6 +1295,16 @@ h2{
   .gameTray {
     padding-left: 3em ;
     padding-right: 3em;
+  }
+
+  .gameTray img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .gameTray div {
+    padding: 0px;
   }
 
   /* .gameTray img {

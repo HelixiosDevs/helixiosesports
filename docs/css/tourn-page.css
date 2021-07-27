@@ -3,7 +3,7 @@
 }
 
 .tournamentCover{
-  background-image: url('../images/d2-BG.jpg');
+  background-image: url('../images/d2-BG.png');
   background-size: cover;
   background-position: center;
 }
@@ -68,17 +68,20 @@
 }
 
 .modal-content{
+  border: 0px;
   background-image: url('../images/mobile-loginBG.jpg');
   background-size: cover;
 }
 
-.modal-header, .modal-body, .modal-footer{
+.modal-header, .modal-body{
   background: rgba(20, 20, 20, 0.75);
   border: 0px;
   padding-left: 2em;
 }
 
 .modal-footer{
+  background: rgba(20, 20, 20, 0.75);
+  border: 0px;
   padding: 0rem 0.75rem 1.75rem;
 }
 
@@ -119,7 +122,7 @@
 }
 
 .inputRow .tournInputbox:last-child{
-  width: 25%;
+  width: 30%;
   text-align: center;
 }
 
@@ -127,27 +130,36 @@
   outline: none;
 }
 
+.tournInputbox {
+  font-size: 101%;
+  text-transform: uppercase;
+}
+
 .tournRegform ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   opacity: 0.8; /* Firefox */
   color: #c7c7c7;
-  font-size: 90%;
+  text-transform: capitalize;
 }
 
 .tournRegform :-ms-input-placeholder { /* Internet Explorer 10-11 */
   opacity: 0.8;
   color: #c7c7c7;
-  font-size: 90%;
 }
 
 .tournRegform ::-ms-input-placeholder { /* Microsoft Edge */
   opacity: 0.8;
   color: #c7c7c7;
-  font-size: 90%;
 }
 
 .redDot:hover{
   color: #fe002a;
 }
+
+.whatsappHead p{
+  margin-bottom: 0em;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 600px)  {
 
@@ -238,7 +250,7 @@
     font-size: 90%;
   }
 
-  .discordHead{
+  .whatsappHead{
     padding-top: 0.5rem !important;
   }
 
@@ -283,7 +295,13 @@
 }
 
 .myTournBody{
-  background-color:#1f1f1f;
+  border-bottom: 1px dashed #777;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.myTournBody:last-child{
+  border-bottom: 0px;
 }
 
 .tournIcon{
@@ -299,7 +317,7 @@
 
 .card{
   display: block;
-  background: none;
+  background: none !important;
   border: none;
   border-radius: 0px;
 }
@@ -328,7 +346,8 @@
     }
 
     .myTournBody{
-      padding: 2rem 0px;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
     }
 
     .myTournPage .headInfoRow{
@@ -338,6 +357,18 @@
 
     .headInfoRow .headInfo{
       margin-right: 0.5rem;
+    }
+
+    .headInfoRow .row{
+      justify-content: center;
+    }
+
+    .tournamentHeadInfo .headInfoRow{
+      padding: 0em 1rem;
+    }
+
+    .yourTeam{
+      padding-top: 1rem !important;
     }
 
     .myTournBody .formSignupbutton{
