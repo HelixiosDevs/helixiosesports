@@ -4,182 +4,136 @@ html, body {
   width: 100%;
   height: 100%;
 }
-.featTournaments, .alltournCarousel{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+
+.alltournamentsSection{
+  background: #000;
 }
 
-.featTournaments{
+.allTournaments{
   background: url('../images/alltournBG.jpg');
   background-position: top;
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.featTournaments h1{
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-  text-align: center;
+.headerLineCont{
+  padding: 0em 14em;
+}
+
+.alltournHead {
   display: flex;
   justify-content: center;
-  font-family: Bebas;
-  font-size: 4em;
+  margin-bottom: 1.5em;
 }
 
-.featTournaments h2{
+.alltournHead img{
+  width: 35%;
+}
+
+.allTournaments h2{
   text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  padding-bottom: 0.25rem;
-}
-
-.alltournCarousel{
-  display: contents;
-  justify-content: center;
-  padding: 30px 10px;
-  transition: background .4s ease-in;
-}
-
-.alltournCarousel input[type=radio] {
-  display: none;
-}
-
-.alltournCarousel .card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform .4s ease;
-  cursor: pointer;
-  background-color: transparent;
-  background-clip: border-box;
-  border:none;
-  border-radius: 0rem;
-}
-
-.alltournCarousel .container {
-  width: 50%;
-  height: 60%;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.alltournCarousel .cards {
+  margin-bottom: 1.75rem;
   position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.alltournCarousel img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-  transform: translatex(-40%) scale(.8);
-  opacity: .6;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-  transform: translatex(40%) scale(.8);
-  opacity: .6;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
   z-index: 1;
+  overflow: hidden;
+  text-align: center;
 }
 
-#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img{
-  box-shadow: 0px 0px 5px 0px rgba(20, 20, 20, 0.47);
+.allTournaments h2:before,
+.allTournaments h2:after {
+  position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 48%;
+    height: 1px;
+    content: '\a0';
+    background-color: #cccccc;
+    margin-left: 2%;
 }
 
-.completedTourns{
+.allTournaments h2:before {
+  margin-left: -50%;
+    text-align: right;
+}
+
+.cardKeeper{
   border-bottom: solid #fe002a;
-  background-color: #000000;
-  padding-bottom: 6em;
+  padding: 0em 12.5em 6em;
   margin-bottom: 2.5em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
 }
 
-.completedTourns .container{
-
-}
-
-.completedTourns .card{
+.cardKeeper .card{
+  border:none;
+  box-shadow: 0px 3px 12px #111111;
   padding: 0;
-  margin: 0px 0.75rem;
   background-color: #191919;
 }
 
-.completedTourns .card-body{
+.cardKeeper .card-body{
   padding: 0.75rem 1.25rem 0.6rem;
 }
 
-.completedTourns .card-title{
+.cardKeeper .card-title{
   text-align: center;
   margin-bottom: 0px !important;
 }
 
-.completedTourns .list-group{
+.cardKeeper .list-group{
   color: #f1f1f1;
 }
 
-.completedTourns .list-group-item{
+.cardKeeper .list-group-item{
   display: flex;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background-color: #323232;
 }
 
-.completedTourns .list-group-item span:last-child{
+.cardKeeper .list-group-item span:last-child{
   margin-left: auto;
 }
 
 @media screen and (max-width: 600px){
 
-  .alltournCarousel .container {
-    width: 85%;
-    height: 30%;
-  }
 
-    .featTournaments{
+    .allTournaments{
       background: url('../images/mobile-alltournBG.jpg');
-      background-position: left;
-      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
     }
 
-    .featTournaments h1{
-    font-size: 3.3em;
-    line-height: 1em;
-    margin-bottom: 0.4em;
+    .alltournHead img{
+      width: 80%;
     }
 
-    .featTournaments h2{
+    .allTournaments h2{
       font-size: 1.4em;
       margin-bottom: 0.7em;
+      margin-bottom: 1.2em;
     }
 
-    .completedTourns{
-      padding-bottom: 1em;
+    .cardKeeper{
+      padding: 0em 2.6em 6em;
     }
 
-    .completedTourns .row {
-      justify-content: center;
-     margin: 2em;
+    .headerLineCont{
+      padding: 0em;
     }
 
-    .completedTourns .card{
-      margin: 0 0 1.5em 0;
+    .allTournaments h2:before,
+    .allTournaments h2:after {
+      display: none;
     }
+
+}
+
+@media screen and (max-width: 390px){
+
+  .cardKeeper{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 0em 1.5em 6em; 
+  }
 
 }

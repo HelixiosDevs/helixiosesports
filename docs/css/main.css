@@ -34,7 +34,7 @@ body{
 
 @font-face {
   font-family: Rajdhani;
-  src: url("../fonts/Rajdhani-Semibold.ttf");
+  src: url("../fonts/Rajdhani-Semibold.woff2");
 }
 
 @font-face {
@@ -80,7 +80,7 @@ a{
 }
 
 .hiUsername{
-  font-size: 85%;
+  font-size: 80%;
   padding: 0.25em 1.2em;
   background-color: #fe002a;
   border-radius: 5px;
@@ -105,6 +105,8 @@ button:focus{
 
 .signupButton-mobile{
   background-color: #fe002a;
+  margin-right: 0.7rem;
+  font-size: 0.795rem;
 }
 
 .welcomeText{
@@ -783,6 +785,110 @@ h2{
 
 @media screen and (max-width: 600px) {
 
+  .helixios-logo-mobile{
+    width: 11em;
+    margin-left: 1em;
+  }
+
+  nav {
+  background-color: #1E1E1E;
+  height: 65px;
+  border-bottom: solid #fe002a;
+}
+
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  z-index: 1000;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1001;
+}
+
+#menuToggle span
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1000;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #FFF;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: fixed;
+  width: 90%;
+  height: 110%;
+  box-shadow: 0 0 10px #000;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #1E1E1E;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(125%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
   .caro-mainbanner{
     display: none !important;
   }
@@ -795,14 +901,14 @@ h2{
     border-bottom: solid 0.1em #fe002a;
   }
 
-  .navbar-toggler{
+  /*.navbar-toggler{
     border: 0em;
     outline:  0em;
   }
 
   .navbar-toggler:focus{
     outline:  0em;
-  }
+  }*/
 
   .navBar{
     height: 2.75em;
@@ -813,7 +919,7 @@ h2{
   }
 
   .helixiosLogo{
-    width: 65%;
+    width: 70%;
   }
 
   .welcomeText{
