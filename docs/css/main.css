@@ -34,7 +34,7 @@ body{
 
 @font-face {
   font-family: Rajdhani;
-  src: url("../fonts/Rajdhani-Semibold.woff2");
+  src: url("../fonts/Rajdhani-Semibold.woff2") format('woff');
 }
 
 @font-face {
@@ -367,6 +367,10 @@ h1{
    position: relative;
  }
 
+ .dp-mobile{
+   display: none;
+ }
+
  .squadImages img{
    position: relative;
  }
@@ -652,7 +656,6 @@ h2{
 
 .googleBtn img{
   margin-right: 0.8em;
-  transform: scale(0.8);
 }
 
 .googleBtn img {
@@ -660,10 +663,8 @@ h2{
 	 transition: transform 0.8s ease;
 }
  .googleBtn:hover img {
-	 -webkit-transition: 0.8s ease;
-	 transition: transform 0.8s ease;
-	 -webkit-transform: rotate(-180deg);
-	 transform: rotate(-180deg);
+	 -webkit-transform: rotate(360deg);
+	 transform: rotate(360deg);
 }
 
 .signingUp{
@@ -1015,6 +1016,28 @@ h2{
 
   .squadHeader{
     padding-bottom: 0.5em;
+  }
+
+  .dp-container{
+    display: none;
+  }
+
+  .dp-mobile{
+    position: relative;
+    display: block;
+  }
+
+  .dp-mobile img:first-child{
+    border: 0.2rem solid #fff;
+    border-radius: 100%;
+  }
+
+  .dp-mobile img:last-child{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 3.25em;
+    z-index: 1;
   }
 
   .squadImages figcaption:last-child {
