@@ -871,6 +871,7 @@ h2{
   box-shadow: 0 0 10px #000;
   margin: -50px 0 0 -50px;
   padding: 50px;
+  padding-left: 70px;
   padding-top: 125px;
   background-color: #1E1E1E;
   -webkit-font-smoothing: antialiased;
@@ -883,6 +884,22 @@ h2{
 {
   padding: 10px 0;
   transition-delay: 2s;
+  list-style-type:square;
+  list-style-position: inside;
+  color: #fe002a;
+}
+
+#menu li:first-child
+{
+  list-style-type: none;
+}
+
+#menu .hiName{
+  color: #fff;
+  padding: 0 0 0.1em 0;
+  margin-bottom: 1em;
+  border-bottom: solid #fe002a;
+  font-size: 150%;
 }
 
 #menuToggle input:checked ~ ul
