@@ -35,8 +35,7 @@ body{
 }
 
 @font-face {
-  font-family: Rajdhani;
-  src: url("../fonts/Rajdhani-Semibold.woff2") format('woff2');
+  font-family: 'Rajdhani', sans-serif;
 }
 
 @font-face {
