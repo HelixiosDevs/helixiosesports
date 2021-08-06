@@ -890,6 +890,7 @@ h2{
   list-style-type:square;
   list-style-position: inside;
   color: #fe002a;
+	font-size: 1.1em;
 }
 
 #menu li:first-child
