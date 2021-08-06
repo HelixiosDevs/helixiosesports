@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
-
 html{
   scroll-behavior: smooth;
 }
 body{
   background-color: #232d3b;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: Rajdhani;
   color: #ffffff;
   overflow-x: hidden;
 }
@@ -35,7 +33,8 @@ body{
 }
 
 @font-face {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Rajdhani';
+  src: url("../fonts/Rajdhani-Semibold.woff2") format('woff2');
 }
 
 @font-face {
@@ -433,7 +432,7 @@ h1{
 }
 
 #aboutFooter{
-  padding: 2.75em 6.75em 5.75em 6.75em;
+  padding: 2.75em 6.75em 5.75em;
 }
 
 .footerLogo{
@@ -460,6 +459,7 @@ h1{
 }
 
 .gitHeader{
+  font-size: 110%;
   display: inline-block;
   /* padding: 0em 9.9375em; */
   vertical-align: top;
@@ -470,6 +470,7 @@ h2{
 }
 
 .gitHeader p{
+  margin: 0px;
   display: inline-block;
   padding-left: 0.8125em;
 }
@@ -956,7 +957,7 @@ h2{
   }
 
   .gameHeader{
-    font-size: 1.1em;
+    font-size: 1.25em;
     margin-top: 1.5em;
   }
 
@@ -1058,8 +1059,12 @@ h2{
     z-index: 1;
   }
 
+  .squadImages figcaption{
+    font-size: 2em;
+  }
+
   .squadImages figcaption:last-child {
-    padding-top: 0.35em;
+    font-size: 1.7em;
   }
 
   #bombsquadLogo {
@@ -1089,9 +1094,10 @@ h2{
   }
 
   .gitHeader{
-    font-size: 80%;
+    font-size: 90%;
     border-left: solid 1px #fe002a;
     margin-top: 2.5rem !important;
+    margin-left: 3rem;
   }
 
   .gitHeader img{
