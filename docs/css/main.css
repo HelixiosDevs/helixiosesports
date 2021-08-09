@@ -532,7 +532,7 @@ h2{
 .redendFooter img{
   display: inline-block;
   transform: scale(0.75);
-  padding-left: 25em;
+  padding-left: ;
   opacity: 0.9;
   transition: top 0.2s;
   transition-timing-function: ease-out;
@@ -791,7 +791,7 @@ h2{
 
   .helixios-logo-mobile{
     width: 11em;
-    margin-left: 1em;
+    margin-left: 0.8em;
   }
 
   nav {
@@ -890,7 +890,7 @@ h2{
   list-style-type:square;
   list-style-position: inside;
   color: #fe002a;
-	font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 #menu li:first-child
@@ -1054,6 +1054,9 @@ h2{
   }
 
   .dp-mobile img:last-child{
+    background: #000;
+    padding: 0.6em;
+    border-radius: 12px;
     position: absolute;
     right: 10px;
     bottom: 5px;
